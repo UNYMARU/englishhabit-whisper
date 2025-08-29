@@ -2,7 +2,7 @@
 // Vercel Serverless / ESM. 루트 package.json에 "type":"module" 필요.
 import OpenAI from "openai";
 import ytdl from "ytdl-core";
-import fs from "fs";
+import fs from "fs"; 
 import os from "os";
 import path from "path";
 
