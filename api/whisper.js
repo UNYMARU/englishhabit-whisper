@@ -12,10 +12,15 @@ const UA = process.env.YT_UA || "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Apple
 const COOKIE = process.env.YT_COOKIE || "";
 
 function buildReqOpts() {
-  const headers = { "user-agent": UA };
+  const headers = {
+    "user-agent": UA,
+    "accept-language": "en-US,en;q=0.9,ko;q=0.8",
+    "referer": "https://www.youtube.com/"
+  };
   if (COOKIE) headers.cookie = COOKIE;
   return { headers };
 }
+
 
 async function downloadAudio(url, outPath) {
   const info = await ytdl.getInfo(url, { requestOptions: buildReqOpts() });
