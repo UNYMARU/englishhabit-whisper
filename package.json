@@ -9,6 +9,6 @@
   "dependencies": {
     "express": "^4.18.2",
     "openai": "^4.56.0",
-    "ytdl-core": "^4.11.5"
+    "@distube/ytdl-core": "^4.15.8"
   }
 }
