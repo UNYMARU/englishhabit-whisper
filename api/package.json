@@ -1,9 +1,0 @@
-{
-  "name": "englishhabit-whisper",
-  "private": true,
-  "type": "module",
-  "dependencies": {
-    "openai": "^4.56.0",
-    "ytdl-core": "^4.11.5"
-  }
-}
